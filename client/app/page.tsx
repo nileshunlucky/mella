@@ -5,10 +5,6 @@ import { Heart, Image, Video } from 'lucide-react';
 import { SignedIn, UserButton, useClerk, useUser } from "@clerk/nextjs";
 import { motion } from "framer-motion";
 
-// Skeleton Components
-const Skeleton = ({ className = "" }) => (
-  <div className={`animate-pulse bg-gray-200 rounded ${className}`} />
-);
 
 const PostSkeleton = () => (
   <div className="relative aspect-square bg-gray-200 rounded-lg overflow-hidden animate-pulse">
@@ -16,11 +12,17 @@ const PostSkeleton = () => (
   </div>
 );
 
+interface PostData {
+  id: string;
+  preview: string;
+}
+
+
 export default function MellavittaProfile() {
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [activeTab, setActiveTab] = useState('posts');
-  const [posts, setPosts] = useState<any[]>([])
-  const [media, setMedia] = useState<any[]>([])
+  const [posts, setPosts] = useState<PostData[]>([])
+  const [media, setMedia] = useState<PostData[]>([])
   const [isExpanded, setIsExpanded] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const { openSignIn } = useClerk();
