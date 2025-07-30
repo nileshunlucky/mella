@@ -4,9 +4,8 @@ export default clerkMiddleware();
 
 export const config = {
   matcher: [
-    // Protect all routes except static files and internals
-    "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
-    "/", // This ensures the root route is checked
-    "/(api|trpc)(.*)",
+    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
+    '/(api|trpc)(.*)',
   ],
-};
+  runtime: 'nodejs', // THIS LINE IS MANDATORY for the fix
+}
