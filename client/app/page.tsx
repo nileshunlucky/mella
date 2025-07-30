@@ -237,7 +237,7 @@ export default function MellavittaProfile() {
                     />
                     <div className="flex-1">
                       <p className="text-sm ">
-                        #1 on Mellavitta for a reason. Come see why and if you join RIGHT NOW dm me to see my first ever masturbation video (don't tell my mom pls)
+                        #1 on Mellavitta for a reason. Come see why and if you join RIGHT NOW dm me to see my first ever masturbation video (don&apos;t tell my mom pls)
                       </p>
                     </div>
                   </div>
@@ -301,7 +301,7 @@ export default function MellavittaProfile() {
                   onClick={handlePostsSubscribeClick}
                   className="bg-[#B08D57] hover:bg-[#B08D57] py-2 px-8 rounded-full transition-colors"
                 >
-                  SUBSCRIBE TO SEE MELLA'S POSTS
+                  SUBSCRIBE TO SEE MELLA&apos;S POSTS
                 </button>
               </div>
             </div>
