@@ -1,0 +1,17 @@
+pymongo
+gunicorn
+fastapi
+python-dotenv
+pydantic
+boto3
+Pillow
+srt
+requests
+uvicorn
+python-multipart
+pytz
+aiofiles
+opencv-python-headless
+apscheduler
+httpx
+pydantic[email]
